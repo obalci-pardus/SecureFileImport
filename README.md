@@ -2,7 +2,7 @@
 
 ## Description
 
-This script ise for securely (checks using multiple anti-viruses before) transfer files from locally connected external media to a remote file server. It can reduces the possibility of transmitting malware to your internal (secure) network with files imported from external media.
+This script can securely transfer files from locally connected external media to a remote file server. It scans the files using multiple anti-viruses before the transfers. So that it can reduce the possibility of transmitting malware to your internal (secure) network from external media.
 
 ## Basic Capabilities
 
