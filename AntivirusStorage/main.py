@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 
-from gi.repository import Gtk
 import gi
 gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
+import argparse
 
 
 class MyWindow(Gtk.Window):
@@ -64,7 +65,17 @@ class MyWindow(Gtk.Window):
     def on_key_release_entryPassword(self, widget, event):
         self.strPassword = widget.get_text()
 
+parser = argparse.ArgumentParser(description='This script can securely transfer files from locally connected external media to a remote file server. It scans the files using multiple anti-viruses before the transfers. So that it can reduce the possibility of transmitting malware to your internal (secure) network from external media.')
+parser.add_argument("--verbosity", "-v", help="increase output verbosity. 1: Prints info for every file processed. 2: Prints extra info (HASH etc.) for every file processed. 3: Prints debug information.")
+parser.add_argument("--src_path", "-s", action="store", help='Source directory containing the files (defaults to "/media/external")')
+parser.add_argument("--dst_path", "-d", action="store", help='Destination directory that will be mounted for the CIFS file share before the transfer (defaults to "/media/CIFS")')
+parser.add_argument("--cifs_server", "-c", action="store", help='CIFS servers IP or FQDN to connect to (defaults to 192.168.1.100)')
+parser.add_argument("--user_path", "-u", action="store", help='Pattern for the users folder on the CIFS server (defaults to "/Personal/<USERNAME>/")')
+args = parser.parse_args()
 
+if args.verbosity:
+	print("Verbosity turned on. I will print about every file processed.")
+    
 win = MyWindow()
 win.show_all()
 Gtk.main()
