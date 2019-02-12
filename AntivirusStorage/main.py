@@ -75,7 +75,19 @@ args = parser.parse_args()
 
 if args.verbosity:
 	print("Verbosity turned on. I will print about every file processed.")
-    
+
+src_path = args.src_path
+if src_path == None:
+	src_path="/media/external"
+
+dst_path = args.dst_path
+if dst_path == None:
+	dst_path="/media/CIFS"
+
+if args.verbosity == "3":
+	print ("Source path:", src_path)
+	print ("Source path:", dst_path)
+
 win = MyWindow()
 win.show_all()
 Gtk.main()
