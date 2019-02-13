@@ -1,22 +1,22 @@
 # TODO
 
-Files/folders in external media may be selected by the user tub included in the transfer operations.
-Information to be displayed: 
-  Brand model, serial number, information (if available) for the external media; 
-  Malware scan summary (number of files, total capacity, all file list, etc.) 
-  Some information displayed on the screen should be dynamically updated so the user will see the process is still in progress.
-Include as many free antiviruses as possible (which supports Linux and preferably which have free versions)
-
-        ClamAV
-        YARA (https://blog.clamav.net/2015/06/clamav-099b-meets-yara.html)
-        McAfee https://www.mcafee.com/enterprise/en-ca/products/virusscan-enterprise-for-linux.html
-        ESET https://www.eset.com/us/home/antivirus-linux/
-        F-PROT http://www.f-prot.com/products/home_use/linux/
-        Sophos https://www.sophos.com/en-us/products/free-tools/sophos-antivirus-for-linux.aspx
-        BitDefender https://www.bitdefender.com/support/scanning-from-the-command-line-of-bitdefender-rescue-cd-616.html
-        Comodo https://www.comodo.com/home/internet-security/antivirus-for-linux.php
-        Avast https://support.avast.com/en-eu/article/131/
-        Avira https://www.avira.com/en/support-download-avira-antivir-rescue-system%20/ (binaries in the rescue system may be used)
+1. Files/folders in external media may be selected by the user tub included in the transfer operations.
+1. Information to be displayed: 
+   1. Brand model, serial number, information (if available) for the external media; 
+   1. Malware scan summary (number of files, total capacity, all file list, etc.) 
+   1. Some information displayed on the screen should be dynamically updated so the user will see the process is still in progress.
+1. Include as many free antiviruses as possible (which supports Linux and preferably which have free versions)
+   1. ClamAV
+   1. VirusTotal
+   1. YARA (https://blog.clamav.net/2015/06/clamav-099b-meets-yara.html)
+   1. McAfee https://www.mcafee.com/enterprise/en-ca/products/virusscan-enterprise-for-linux.html
+   1. ESET https://www.eset.com/us/home/antivirus-linux/
+   1. F-PROT http://www.f-prot.com/products/home_use/linux/
+   1. Sophos https://www.sophos.com/en-us/products/free-tools/sophos-antivirus-for-linux.aspx
+   1. BitDefender https://www.bitdefender.com/support/scanning-from-the-command-line-of-bitdefender-rescue-cd-616.html
+   1. Comodo https://www.comodo.com/home/internet-security/antivirus-for-linux.php
+   1. Avast https://support.avast.com/en-eu/article/131/
+   1. Avira https://www.avira.com/en/support-download-avira-antivir-rescue-system%20/ (binaries in the rescue system may be used)
 
 ## References:
 
