@@ -26,7 +26,7 @@ This script can securely transfer files from locally connected external media to
 1. Files in external media will be scanned using multiple 
    es 
 1. If no virus is found in the scanned files:
-   1. A new folder opens in the standard folder specified on the file server (Template: "<UserID> \ _ Transfer_ \ YYYYAAGG-SSDDss")
+   1. A new folder opens in the standard folder specified on the file server (Template: "{UserID}\\{TransferFolder}\\$(date +%Y-%m-%d_%H-%M-%S)")
    1. External media information is copied to the destination folder in TXT / XML format. (?)
    1. The files are copied to the destination folder along with the hash value file.
 1. If a virus is found or the scan fails, no transfer is performed.
