@@ -5,7 +5,7 @@
    1. Brand model, serial number, information (if available) for the external media; 
    1. Malware scan summary (number of files, total capacity, all file list, etc.) 
    1. Some information displayed on the screen should be dynamically updated so the user will see the process is still in progress.
-1. Include as many free antiviruses as possible (which supports Linux and preferably which have free versions)
+1. Include as many antiviruses as possible (which supports Linux and preferably which have free versions)
    1. ClamAV
    1. VirusTotal
    1. YARA (https://blog.clamav.net/2015/06/clamav-099b-meets-yara.html)
