@@ -23,12 +23,14 @@ This script can securely transfer files from locally connected external media to
 1. The active directory user name and password are taken to access the file server.
 1. If the external media is not physically connected, the status is displayed on the screen and the user is expected to operate for <TIMEOUT> (Default:180) seconds. If the user does not perform the operation, the program will exit (and main LTSP menu will be is returned).
 1. The external media connected to the system are automatically connected in read-only mode. This ensures that no data is transferred from the file server. (Because root can override it, it is important to keep the root password of client securely)
-1. Files in external media will be scanned using multiple 
-   es 
-1. If no virus is found in the scanned files:
+1. Optionally the user will select which files/floders will be transferred.
+1. Files in external media will be scanned using multiple malware scanners. 
+1. If no malware found in the scanned files:
    1. A new folder opens in the standard folder specified on the file server (Template: "{UserID}\\{TransferFolder}\\$(date +%Y-%m-%d_%H-%M-%S)")
    1. External media information is copied to the destination folder in TXT / XML format. (?)
-   1. The files are copied to the destination folder along with the hash value file.
-1. If a virus is found or the scan fails, no transfer is performed.
+   1. The files are copied to the destination folder (optionnally with their hash values)
+1. If a virus is found or the scan fails: 
+   1. No transfer is performed.
+   1. An optional allert mail will be send to the administrator.
 1. The user is informed of the transaction result.
 1. Each step of the operation will be logged including detailed (time, username, filenames, hashes, scanresults, etc.) which can also be sent to a central rsyslog (RELP) server.
