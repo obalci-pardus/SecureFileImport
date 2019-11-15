@@ -1,6 +1,6 @@
 # TODO
 
-1. Files/folders in external media may be selected by the user tub included in the transfer operations.
+1. Files/folders in external media may be selected by the user to be included in the transfer operations.
 1. Information to be displayed: 
    1. Brand model, serial number, information (if available) for the external media; 
    1. Malware scan summary (number of files, total capacity, all file list, etc.) 
@@ -17,6 +17,7 @@
    1. Comodo https://www.comodo.com/home/internet-security/antivirus-for-linux.php
    1. Avast https://support.avast.com/en-eu/article/131/
    1. Avira https://www.avira.com/en/support-download-avira-antivir-rescue-system%20/ (binaries in the rescue system may be used)
+   1. Microsoft Defender https://itsfoss.com/microsoft-defender-atp-linux (in the future)
 
 ## References:
 
